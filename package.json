@@ -1,0 +1,32 @@
+{
+  "name": "mongoose_skeleton",
+  "version": "1.0.0",
+  "description": "app that will scrape the Duck-Duck-Go open API for the first photo of user input parameters - and display the photo and grab the URL for the first photo - and user can comment on the photo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.1",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11",
+    "mongoose": "^5.0.11",
+    "morgan": "^1.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OperaSinger/scraper-draper.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/OperaSinger/scraper-draper/issues"
+  },
+  "homepage": "https://github.com/OperaSinger/scraper-draper#readme"
+}

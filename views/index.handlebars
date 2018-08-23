@@ -1,0 +1,45 @@
+ {{!-- The Key from the data in the ROUTE --}}
+
+ {{#each Articles}} {{#if @first}}
+<div class="item active">
+  {{else}}
+  <div class="item">
+    {{/if}}
+    <img src="https://images7.alphacoders.com/316/316707.jpg" class="img" style="width:100%;">
+    <div class="text-block">
+      <h4><a href="{{this.link}}">{{this.title}}</a></h4>
+      <div class="row">
+        <div class="col-md-6" id="notes">
+          <div class="input-group" id="notesize">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Note Title</span>
+            </div>
+            <div>
+              <input type="text" class="form-control title" id="title" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group" id="notesize">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Note:</span>
+              </div>
+              <div class="input-group" id="notesize">
+                <textarea class="form-control body" id="body" rows="6"></textarea>
+              </div>
+
+              <button type="submit" id="make-new" class="btn btn-primary mb-2">Submit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6" id="allNotes">
+          <div class="row">
+            <div data-spy="scroll" data-target="#notes-all" data-offset="0" class="scrollsize" ;>
+              <div class="note">
+                {{!-- Notes Go here --}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}} 
