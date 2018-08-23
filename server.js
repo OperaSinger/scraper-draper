@@ -38,6 +38,16 @@ app.use(express.static('public'));
 // Connect to the Mongo DB (port 27017)
 mongoose.connect("mongodb://localhost:27017/draper", { useNewUrlParser: true });
 
+
+// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
+var MONGODB_URI = process.env.MONGODB_URI;
+
+// Set mongoose to leverage built in JavaScript ES6 Promises
+// Connect to the Mongo DB
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI || "mongodb://localhost:27017/draper", { useNewUrlParser: true });
+
+
 // setting up routes:
 app.get("/", function (req, res) {
 
