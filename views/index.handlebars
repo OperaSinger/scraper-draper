@@ -15,17 +15,17 @@
               <span class="input-group-text" id="inputGroup-sizing-default">Note Title</span>
             </div>
             <div>
-              <input type="text" class="form-control title" id="title" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+              <input type="text" class="form-control title" id="title{{@index}}" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
             <div class="input-group" id="notesize">
               <div class="input-group-prepend">
                 <span class="input-group-text">Note:</span>
               </div>
               <div class="input-group" id="notesize">
-                <textarea class="form-control body" id="body" rows="6"></textarea>
+                <textarea class="form-control body" id="body{{@index}}" rows="6"></textarea>
               </div>
 
-              <button type="submit" id="make-new" class="btn btn-primary mb-2">Submit</button>
+              <button type="submit" id="make-new" data-num="{{@index}}" class="btn btn-primary mb-2">Submit</button>
             </div>
           </div>
         </div>

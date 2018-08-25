@@ -18,13 +18,14 @@ function getNotes() {
 $(document).on("click", "#make-new", function () {
   // AJAX POST call to the submit route on the server
   // This will take the data from the form and send it to the server
+  var num = $(this).attr("data-num")
   $.ajax({
     type: "POST",
     dataType: "json",
     url: "/submit",
     data: {
-      title: $("#title").val(),
-      body: $("#body").val(),
+      title: $("#title"+num).val(),
+      body: $("#body"+num).val(),
       created: Date.now()
     }
   })
