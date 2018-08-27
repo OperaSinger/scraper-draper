@@ -45,7 +45,7 @@ var MONGODB_URI = process.env.MONGODB_URI;
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI || "mongodb://localhost:27017/draper", { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI || "mongodb://localhost/draper", { useNewUrlParser: true });
 
 
 // setting up routes:
