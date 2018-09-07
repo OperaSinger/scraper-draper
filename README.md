@@ -22,10 +22,13 @@ Morgan
 ##Functionality
 ​
 When all files are installed, at the command line, start the app in your terminal using either NODEMON or NODE followed by 'server.js', Then within your browser, you would have to type, in the command line:
+
 ​
 localhost://3000
 ​
+
 This will start the app in the browser window, initiate a scrape of the NY Times page for the 10 top headlines - each with their link associated to read in their entirety - in a carousel. The user may scroll through all 10 articles and take notes based on each article - notes which will then be prepended to the list on the right of each card which is scrollable. 
+
 ​
 To view video of app functionality, <a href="https://github.com/OperaSinger/scraper-draper/blob/master/Vale%20Rideout%20-%20Scraper%20App.mp4">click here</a>.
 
